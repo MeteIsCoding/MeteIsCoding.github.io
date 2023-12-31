@@ -96,7 +96,7 @@ header {
 }
 
 .contact-message a:hover {
-  color: rgb(83, 174, 204);
+  color: rgb(102, 196, 227);
   text-decoration: underline;
   transition: all 0.1s;
 }
