@@ -71,9 +71,15 @@ header {
   letter-spacing: -11px;
 }
 
+.message {
+  background-color: #6e6e6e36;
+  backdrop-filter: blur(2px);
+  outline: 2px solid #2b2b2b;
+  box-shadow: inset 0px 0px 3px #2b2b2b;
+}
+
 .messageBienvenue {
   color: white;
-  background-color: #222222;
   border-radius: 40px;
   padding: 20px;
   text-align: justify;
@@ -82,7 +88,6 @@ header {
 
 .messageContact {
   color: white;
-  background-color: #222222;
   text-decoration: none;
   border-radius: 40px;
   padding: 20px;
@@ -98,8 +103,9 @@ header {
 }
 
 .messageContact a:hover {
-  color: rgb(105, 218, 255);
+  color: rgb(83, 174, 204);
   text-decoration: underline;
+  transition: all 0.1s;
 }
 
 .extraitBandersnatch img {
@@ -117,39 +123,6 @@ h1 {
 @keyframes type{ 
   from { width: 0; } 
 }
-
-/* @keyframes apparaitre { /* debug https://www.youtube.com/watch?v=bPbnX9_K1y4 */ 
-  /* to {
-    opacity: 1;
-  }
-} */
-
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child */
-/* .lettreApparition span:nth-child(1) { animation-delay: 0.05s;}
-.lettreApparition span:nth-child(2) { animation-delay: 0.1s; }
-.lettreApparition span:nth-child(3) { animation-delay: 0.2s; }
-.lettreApparition span:nth-child(4) { animation-delay: 0.3s; }
-.lettreApparition span:nth-child(5) { animation-delay: 0.4s; }
-.lettreApparition span:nth-child(6) { animation-delay: 0.5s; }
-.lettreApparition span:nth-child(7) { animation-delay: 0.6s; }
-.lettreApparition span:nth-child(8) { animation-delay: 0.7s; }
-.lettreApparition span:nth-child(9) { animation-delay: 0.8s; }   
-.lettreApparition span:nth-child(10){ animation-delay: 0.9s; }
-.lettreApparition span:nth-child(11){ animation-delay: 0.10s;}
-.lettreApparition span:nth-child(12){ animation-delay: 0.11s;}
-.lettreApparition span:nth-child(13){ animation-delay: 0.12s;}
-.lettreApparition span:nth-child(14){ animation-delay: 0.13s;}
-.lettreApparition span:nth-child(15){ animation-delay: 0.14s;}
-.lettreApparition span:nth-child(16){ animation-delay: 0.15s;}
-.lettreApparition span:nth-child(17){ animation-delay: 0.16s;}
-.lettreApparition span:nth-child(18){ animation-delay: 0.17s;}
-.lettreApparition span:nth-child(19){ animation-delay: 0.18s;}
-.lettreApparition span:nth-child(20){ animation-delay: 0.19s;}
-.lettreApparition span:nth-child(21){ animation-delay: 0.20s;}
-.lettreApparition span:nth-child(22){ animation-delay: 0.21s;}
-.lettreApparition span:nth-child(23){ animation-delay: 0.22s;}
-.lettreApparition span:nth-child(24){ animation-delay: 0.23s;}
-.lettreApparition span:nth-child(25){ animation-delay: 0.24s;} */
 
 .imgCV img {
   height: 900px; 
@@ -178,7 +151,6 @@ h1 {
 }
 
 .ligneInteret p {
-  background-color: #222222;
   padding: 20px; 
   border-radius: 40px;
   margin-left: 10px; /* image esp texte */
