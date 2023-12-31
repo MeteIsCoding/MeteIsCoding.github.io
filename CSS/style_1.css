@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  background: url('../assets/bonsoirJeSuisArrierePlanMoinsLourd.gif');
+  background-position: fixed;
+  background-attachment: fixed;
+}
+
+.barNavigation {
+  background-color: #222222;
+}
+
+.navPrin {
+  max-width: 1000px; 
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.boutonNavigation { /* https://www.w3schools.com/w3css/w3css_navigation.asp*/
+  padding: 10px; /* esp bord */
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.2s, transform 0.2s; /* https://www.w3schools.com/howto/howto_css_transition_hover.asp*/
+}
+
+.boutonNavigation:hover { 
+  background-color: #2b2b2b; /* change de couleur lorsqu'on hover vaec le cursuer*/
+  transform: scale(1.1);  /* 1.1 fois plus grand lorsqu'on hover avec le curseur*/
+}
+.pagePrin {
+  
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column; 
+  background: url('../assets/bonsoirJeSuisArrierePlanMoinsLourd.gif');
+  background-position: fixed;
+  background-attachment: fixed;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 20px; 
+}
+
+.lettreApparition span {
+  opacity: 0;
+  animation: apparaitre 0.24s forwards;
+  font-family: arial;
+  font-weight: bold;
+  color: white;
+  letter-spacing: -11px;
+}
+
+.messageBienvenue {
+  color: white;
+  background-color: #222222;
+  border-radius: 40px;
+  padding: 20px;
+  text-align: justify;
+  max-width: 600px; 
+}
+
+.messageContact {
+  color: white;
+  background-color: #222222;
+  text-decoration: none;
+  border-radius: 40px;
+  padding: 20px;
+  text-align: justify;
+  max-width: 600px; 
+}
+
+/* https://usefulangle.com/post/295/css-change-link-underline-color */
+.messageContact a {
+  color: rgb(172, 234, 255);
+  text-decoration: none;
+
+}
+
+.messageContact a:hover {
+  color: rgb(105, 218, 255);
+  text-decoration: underline;
+}
+
+.extraitBandersnatch img {
+  border-radius: 50px;
+}
+
+@keyframes apparaitre { /* debug https://www.youtube.com/watch?v=bPbnX9_K1y4 */ 
+  to {
+    opacity: 1;
+  }
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child */
+.lettreApparition span:nth-child(1) { animation-delay: 0.05s;}
+.lettreApparition span:nth-child(2) { animation-delay: 0.1s; }
+.lettreApparition span:nth-child(3) { animation-delay: 0.2s; }
+.lettreApparition span:nth-child(4) { animation-delay: 0.3s; }
+.lettreApparition span:nth-child(5) { animation-delay: 0.4s; }
+.lettreApparition span:nth-child(6) { animation-delay: 0.5s; }
+.lettreApparition span:nth-child(7) { animation-delay: 0.6s; }
+.lettreApparition span:nth-child(8) { animation-delay: 0.7s; }
+.lettreApparition span:nth-child(9) { animation-delay: 0.8s; }   
+.lettreApparition span:nth-child(10){ animation-delay: 0.9s; }
+.lettreApparition span:nth-child(11){ animation-delay: 0.10s;}
+.lettreApparition span:nth-child(12){ animation-delay: 0.11s;}
+.lettreApparition span:nth-child(13){ animation-delay: 0.12s;}
+.lettreApparition span:nth-child(14){ animation-delay: 0.13s;}
+.lettreApparition span:nth-child(15){ animation-delay: 0.14s;}
+.lettreApparition span:nth-child(16){ animation-delay: 0.15s;}
+.lettreApparition span:nth-child(17){ animation-delay: 0.16s;}
+.lettreApparition span:nth-child(18){ animation-delay: 0.17s;}
+.lettreApparition span:nth-child(19){ animation-delay: 0.18s;}
+.lettreApparition span:nth-child(20){ animation-delay: 0.19s;}
+.lettreApparition span:nth-child(21){ animation-delay: 0.20s;}
+.lettreApparition span:nth-child(22){ animation-delay: 0.21s;}
+.lettreApparition span:nth-child(23){ animation-delay: 0.22s;}
+.lettreApparition span:nth-child(24){ animation-delay: 0.23s;}
+.lettreApparition span:nth-child(25){ animation-delay: 0.24s;}
+
+.imgCV img {
+  height: 900px; 
+}
+
+.pageInteret {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 20px; /* esp haut */
+}
+
+.ligneInteret {
+  max-width: 1000px; 
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  text-align: center;
+}
+
+.ligneInteret img {
+  width: 400px;
+  border-radius: 50px; /* https://www.w3schools.com/css/css3_borders.asp#:~:text=The%20CSS%20border%2Dradius%20property%20defines%20the%20radius%20of%20an,add%20rounded%20corners%20to%20elements! */
+}
+
+.ligneInteret p {
+  background-color: #222222;
+  padding: 20px; 
+  border-radius: 40px;
+  margin-left: 10px; /* image esp texte */
+  margin-right: 10px;
+  text-align: justify;
+  color: white;
+  font-size: 18px;
+}
